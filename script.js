@@ -1,4 +1,3 @@
-// ============ SCROLL REVEAL ============
 const revealEls = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -17,11 +16,9 @@ if ("IntersectionObserver" in window) {
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
 
-// ============ CONTINUOUS TEAM SHOWCASE ============
 const memberSlider = document.getElementById("memberSlider");
 const memberTrack = memberSlider?.querySelector(".continuous-scroll-track");
 if (memberSlider && memberTrack) {
-  // Clone nodes for infinite scroll
   memberTrack.append(
     ...Array.from(memberTrack.children).map((m) => m.cloneNode(true))
   );
@@ -33,7 +30,6 @@ if (memberSlider && memberTrack) {
   });
 }
 
-// ============ MOBILE NAV ============
 const navToggle = document.getElementById("navToggle");
 const primaryNav = document.getElementById("primaryNav");
 const barTop = document.getElementById("barTop");
@@ -55,7 +51,6 @@ function setNavOpen(isOpen) {
     ? "translateY(-6.5px) rotate(-45deg)"
     : "none";
 
-  // Prevent body scroll when mobile nav open
   document.body.style.overflow = isOpen ? "hidden" : "";
 }
 
@@ -73,7 +68,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-// ============ NAVBAR SCROLL BEHAVIOR ============
 const navbar = document.getElementById("siteNav");
 if (navbar) {
   let lastScroll = 0;
@@ -81,7 +75,6 @@ if (navbar) {
     "scroll",
     () => {
       const scrollY = window.scrollY;
-      // Slightly more opaque when scrolled
       if (scrollY > 10) {
         navbar.style.background = "rgba(255, 255, 255, 0.88)";
       } else {
@@ -93,7 +86,6 @@ if (navbar) {
   );
 }
 
-// ============ HERO ART PARALLAX ============
 const heroArt = document.querySelector(".hero-art");
 if (heroArt && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const parallaxLayers = [
@@ -127,7 +119,6 @@ if (heroArt && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   heroArt.addEventListener("pointerleave", resetParallax);
 }
 
-// ============ DASHBOARD CHART ANIMATION ============
 const chartEl = document.getElementById("dashboardChart");
 if (chartEl) {
   const chartBars = chartEl.querySelectorAll(".chart-bar");
@@ -135,7 +126,6 @@ if (chartEl) {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Animate bars from 0 to their target height
           chartBars.forEach((bar, i) => {
             const target = bar.style.height;
             bar.style.height = "4px";
@@ -152,7 +142,6 @@ if (chartEl) {
   chartObserver.observe(chartEl);
 }
 
-// ============ CUSTOMER SERVICE WIDGET ============
 const customerServiceAnswers = [
   {
     topic: "business",

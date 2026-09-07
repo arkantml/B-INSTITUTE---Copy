@@ -1,4 +1,3 @@
-/* ============ APPLE DESIGN DNA — TOKENS ============ */
 :root {
   --apple-blue: #0066cc;
   --apple-blue-hover: #0055b3;
@@ -21,7 +20,6 @@
   --section-pad-mobile: 72px;
 }
 
-/* ============ RESET ============ */
 *,
 *::before,
 *::after {
@@ -55,7 +53,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ============ LAYOUT ============ */
 .wrap {
   max-width: var(--container);
   margin: 0 auto;
@@ -69,7 +66,6 @@ a:hover {
   }
 }
 
-/* ============ TYPOGRAPHY ============ */
 h1,
 h2,
 h3,
@@ -121,7 +117,6 @@ h4 {
   color: var(--apple-gray);
 }
 
-/* ============ BUTTONS — APPLE PILL ============ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -191,7 +186,6 @@ h4 {
   line-height: 1;
 }
 
-/* ============ GLASSMORPHISM NAVBAR ============ */
 .navbar {
   position: fixed;
   top: 0;
@@ -281,7 +275,6 @@ h4 {
   background: var(--apple-blue-hover);
 }
 
-/* Nav toggle (mobile) */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -304,7 +297,6 @@ h4 {
   transform-origin: center;
 }
 
-/* ============ SECTIONS ============ */
 section {
   scroll-margin-top: 52px;
 }
@@ -333,7 +325,6 @@ section {
   margin-right: auto;
 }
 
-/* ============ HERO ============ */
 .hero {
   position: relative;
   padding: 140px 0 120px;
@@ -407,7 +398,6 @@ section {
   color: var(--apple-black);
 }
 
-/* ============ STATS BAR ============ */
 .stats-bar {
   background: var(--apple-dark);
   color: var(--apple-white);
@@ -443,7 +433,6 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* ============ FEATURE GRID ============ */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -487,7 +476,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* ============ DASHBOARD PREVIEW (GLASSMORPHIC) ============ */
 .dashboard-section {
   position: relative;
   background: linear-gradient(180deg, var(--apple-dark) 0%, #1a1a1e 100%);
@@ -607,7 +595,6 @@ section {
   background: linear-gradient(180deg, #5ac8fa 0%, rgba(90, 200, 250, 0.3) 100%);
 }
 
-/* ============ ABOUT ============ */
 .about-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -681,7 +668,6 @@ section {
   }
 }
 
-/* ============ ENGAGEMENT (B2B) ============ */
 .engagement-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -737,7 +723,6 @@ section {
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* ============ TEAM ============ */
 .team-leader-card {
   display: grid;
   grid-template-columns: minmax(240px, 320px) 1fr;
@@ -819,7 +804,6 @@ section {
   transform: translateY(-2px);
 }
 
-/* Continuous team scroller */
 .continuous-scroll {
   overflow: hidden;
   cursor: grab;
@@ -914,7 +898,6 @@ section {
   letter-spacing: 0.04em;
 }
 
-/* ============ TESTIMONIALS ============ */
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -967,7 +950,6 @@ section {
   margin-top: 2px;
 }
 
-/* ============ NEWS ============ */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1015,7 +997,6 @@ section {
   margin-bottom: 16px;
 }
 
-/* ============ CONTACT ============ */
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1109,7 +1090,6 @@ section {
   min-height: 110px;
 }
 
-/* ============ FOOTER ============ */
 .site-footer {
   background: var(--apple-dark);
   color: rgba(255, 255, 255, 0.8);
@@ -1197,7 +1177,6 @@ section {
   text-decoration: none;
 }
 
-/* ============ SCROLL REVEAL ============ */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -1223,7 +1202,6 @@ section {
   }
 }
 
-/* ============ HERO ART (Language Network) ============ */
 .hero-art {
   position: relative;
   min-height: 390px;
@@ -1474,7 +1452,6 @@ section {
   }
 }
 
-/* ============ FOCUS ============ */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -1484,7 +1461,6 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* ============ CUSTOMER SERVICE WIDGET ============ */
 .customer-service-toggle {
   position: fixed;
   right: 24px;
@@ -1645,7 +1621,6 @@ textarea:focus-visible {
   opacity: 0.5;
 }
 
-/* ============ RESPONSIVE (mobile nav) ============ */
 @media (max-width: 834px) {
   .navbar-links {
     position: fixed;
@@ -1717,7 +1692,6 @@ textarea:focus-visible {
   }
 }
 
-/* ============ SR ONLY ============ */
 .sr-only {
   position: absolute;
   width: 1px;
