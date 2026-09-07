@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B Institute — English Language Institute</title>
+    <meta
+      name="description"
+      content="B Institute helps learners build confident English communication for work, study, travel, and international connection."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ GLASSMORPHISM NAVBAR ============ -->
+    <header class="navbar" id="siteNav">
+      <div class="navbar-inner">
+        <a href="#home" class="navbar-brand">
+          <img src="assets/B.png" alt="B Institute logo" />
+          <span class="navbar-brand-text">
+            B INSTITUTE
+            <small>PROFESSIONAL EDUCATION</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span id="barTop"></span>
+          <span id="barMid"></span>
+          <span id="barBot"></span>
+        </button>
+        <nav class="navbar-links" id="primaryNav">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#engagement">For Organizations</a>
+          <a href="#team">Team</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#news">News</a>
+          <a href="#contact" class="navbar-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-watermark" aria-hidden="true">B</div>
+      <div class="wrap">
+        <div
+          class="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20"
+        >
+          <!-- Left: text content -->
+          <div class="hero-content reveal" style="text-align: left">
+            <p class="eyebrow">English Language Institute · Est. 20—</p>
+            <h1 class="headline-hero">
+              Find your voice<br />in English.
+            </h1>
+            <p class="subhead" style="margin-left: 0; margin-right: 0">
+              B Institute helps people speak with clarity, write with
+              confidence, and connect across cultures through practical English
+              learning for work, study, and everyday life.
+            </p>
+            <div class="hero-ctas" style="justify-content: flex-start">
+              <a href="#programs" class="btn btn-primary"
+                >Explore English Programs</a
+              >
+              <a href="#contact" class="btn btn-outline"
+                >Book a Conversation</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: animated language art -->
+          <div
+            class="hero-art reveal"
+            style="--reveal-delay: 150ms"
+            aria-label="Animated language and communication network"
+          >
+            <div class="writer-scene">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="sound-wave"></div>
+              <div class="sound-wave wave-two"></div>
+              <div class="sound-wave wave-three"></div>
+              <div class="language-core">B</div>
+              <div class="language-token token-one">HELLO</div>
+              <div class="language-token token-two">IDEAS</div>
+              <div class="language-token token-three">SPEAK</div>
+              <div class="language-token token-four">GROW</div>
+            </div>
+            <div class="hero-art-caption">Language connects people.</div>
+          </div>
+        </div>
+
+        <!-- Trusted by -->
+        <div class="hero-trusted reveal" style="--reveal-delay: 200ms">
+          <p class="eyebrow">Trusted by learning &amp; talent teams at</p>
+          <div class="hero-logos">
+            <span class="hero-logo-text">Nusantara</span>
+            <span class="hero-logo-text">MERIDIAN</span>
+            <span class="hero-logo-text">CakraRetail</span>
+            <span class="hero-logo-text">ORBIT&nbsp;Group</span>
+            <span class="hero-logo-text">Kilau&nbsp;Energi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS BAR ============ -->
+    <section class="stats-bar">
+      <div class="wrap">
+        <div class="stats-grid">
+          <div class="stat reveal">
+            <div class="stat-number">32</div>
+            <div class="stat-label">Programs Delivered</div>
+          </div>
+          <div class="stat reveal" style="--reveal-delay: 80ms">
+            <div class="stat-number">12,400+</div>
+            <div class="stat-label">Alumni Worldwide</div>
+          </div>
+          <div class="stat reveal" style="--reveal-delay: 160ms">
+            <div class="stat-number">180</div>
+            <div class="stat-label">Corporate Partners</div>
+          </div>
+          <div class="stat reveal" style="--reveal-delay: 240ms">
+            <div class="stat-number">30</div>
+            <div class="stat-label">Years of Practice</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section-white section-padding" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-plaque reveal">
+            <div class="about-year">20—</div>
+            <div class="about-year-label">Founding Year</div>
+            <hr class="about-divider" />
+            <p class="body-text" style="font-size: 14px; line-height: 1.7">
+              B Institute was founded to close the gap between academic theory
+              and the decisions professionals face at work. Three decades later,
+              that founding brief still shapes every program we build.
+            </p>
+          </div>
+
+          <div class="reveal" style="--reveal-delay: 120ms">
+            <p class="eyebrow">About the Institute</p>
+            <h2
+              class="headline-section"
+              style="
+                font-size: clamp(26px, 3vw, 34px);
+                margin-bottom: 16px;
+                line-height: 1.18;
+              "
+            >
+              A rigorous, practical approach to professional education
+            </h2>
+            <p class="body-text" style="margin-bottom: 32px">
+              We design programs the way a good editor edits: nothing included
+              that doesn't earn its place. Every course is built around real
+              decisions, real case material, and real feedback — taught by
+              practitioners who still do the work they teach.
+            </p>
+
+            <div class="values-list">
+              <div class="value-row">
+                <div class="value-title">Rigor</div>
+                <div class="value-desc">
+                  Programs are built on evidence and tested frameworks, not
+                  trends, and reviewed each year against outcomes.
+                </div>
+              </div>
+              <div class="value-row">
+                <div class="value-title">Relevance</div>
+                <div class="value-desc">
+                  Curricula are co-developed with the industries we serve, so
+                  what is taught on Monday is usable by Friday.
+                </div>
+              </div>
+              <div class="value-row">
+                <div class="value-title">Reach</div>
+                <div class="value-desc">
+                  Cohorts bring together professionals across sectors and
+                  seniority, widening the perspective in every room.
+                </div>
+              </div>
+              <div class="value-row" style="border-bottom: none">
+                <div class="value-title">Results</div>
+                <div class="value-desc">
+                  We track alumni progress for years after graduation, and use
+                  it to hold our own programs accountable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS (FEATURE GRID) ============ -->
+    <section class="section-gray section-padding" id="programs">
+      <div class="wrap">
+        <div class="section-center reveal" style="margin-bottom: 56px">
+          <p class="eyebrow">Programs</p>
+          <h2 class="headline-section" style="font-size: clamp(28px, 3.6vw, 48px)">
+            English for every conversation<br />that matters.
+          </h2>
+          <p
+            class="subhead"
+            style="margin-top: 16px; font-size: clamp(17px, 1.6vw, 21px)"
+          >
+            Each track is offered as a short course, a certificate, or a custom
+            cohort for organizations.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card reveal">
+            <h3>Everyday English</h3>
+            <p>
+              Build a strong foundation for daily conversations, new
+              friendships, travel, and confident participation in English.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+          <div class="feature-card reveal" style="--reveal-delay: 60ms">
+            <h3>Business English</h3>
+            <p>
+              Write clear emails, lead meetings, present ideas, and collaborate
+              with international teams using practical workplace English.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+          <div class="feature-card reveal" style="--reveal-delay: 120ms">
+            <h3>Speaking Lab</h3>
+            <p>
+              A supportive practice space for pronunciation, fluency, and the
+              confidence to express your ideas without hesitation.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+          <div class="feature-card reveal" style="--reveal-delay: 180ms">
+            <h3>Academic English</h3>
+            <p>
+              Develop the reading, writing, listening, and discussion skills you
+              need for university, scholarships, and global study.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+          <div class="feature-card reveal" style="--reveal-delay: 240ms">
+            <h3>IELTS Preparation</h3>
+            <p>
+              Prepare with focused strategies, realistic practice, and feedback
+              that helps you approach every band score with confidence.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+          <div class="feature-card reveal" style="--reveal-delay: 300ms">
+            <h3>Teacher Development</h3>
+            <p>
+              Grow as an English educator through modern classroom practice,
+              mentoring, and a community that shares what works.
+            </p>
+            <a href="#contact" class="link-arrow">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DASHBOARD PREVIEW (GLASSMORPHIC) ============ -->
+    <section class="dashboard-section section-padding" id="dashboard">
+      <div class="dashboard-glow"></div>
+      <div class="wrap">
+        <div class="section-center reveal" style="margin-bottom: 56px">
+          <p class="eyebrow" style="color: rgba(255,255,255,0.45)">Enterprise Dashboard</p>
+          <h2
+            class="headline-section"
+            style="color: #fff; font-size: clamp(28px, 3.6vw, 48px)"
+          >
+            Real-time insights for<br />L&amp;D teams.
+          </h2>
+          <p class="subhead" style="color: rgba(255,255,255,0.5); margin-top: 16px">
+            Track learner progress, completion rates, and measurable outcomes
+            across every cohort.
+          </p>
+        </div>
+
+        <div class="dashboard-container reveal" style="--reveal-delay: 120ms">
+          <div class="dashboard-header">
+            <div class="dashboard-title">Program Overview</div>
+            <div class="dashboard-badge">● Live</div>
+          </div>
+          <div class="dashboard-metrics">
+            <div class="metric-card">
+              <div class="metric-label">Active Learners</div>
+              <div class="metric-value">1,247</div>
+              <div class="metric-trend">↑ 18% vs last quarter</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Completion Rate</div>
+              <div class="metric-value">94.2%</div>
+              <div class="metric-trend">↑ 3.1% vs last quarter</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Avg Score Improvement</div>
+              <div class="metric-value">+2.4</div>
+              <div class="metric-trend">IELTS band points</div>
+            </div>
+          </div>
+          <div class="chart-placeholder" id="dashboardChart">
+            <div class="chart-bar" style="height: 45%"></div>
+            <div class="chart-bar" style="height: 62%"></div>
+            <div class="chart-bar" style="height: 38%"></div>
+            <div class="chart-bar" style="height: 78%"></div>
+            <div class="chart-bar" style="height: 55%"></div>
+            <div class="chart-bar" style="height: 88%"></div>
+            <div class="chart-bar" style="height: 72%"></div>
+            <div class="chart-bar" style="height: 65%"></div>
+            <div class="chart-bar" style="height: 82%"></div>
+            <div class="chart-bar" style="height: 94%"></div>
+            <div class="chart-bar" style="height: 70%"></div>
+            <div class="chart-bar" style="height: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENGAGEMENT MODEL (B2B) ============ -->
+    <section class="section-dark section-padding" id="engagement">
+      <div class="wrap">
+        <div
+          class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
+          style="margin-bottom: 56px"
+        >
+          <div style="max-width: 560px">
+            <p class="eyebrow" style="color: rgba(255,255,255,0.4)">
+              For Organizations
+            </p>
+            <h2
+              class="headline-section"
+              style="
+                color: #fff;
+                font-size: clamp(28px, 3.6vw, 48px);
+              "
+            >
+              A partnership model built for L&amp;D teams.
+            </h2>
+            <p
+              class="subhead"
+              style="
+                color: rgba(255, 255, 255, 0.5);
+                margin-top: 16px;
+                font-size: 17px;
+              "
+            >
+              Every corporate engagement runs through the same four stages, so
+              stakeholders always know what's next.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #fff"
+            >Request a Proposal</a
+          >
+        </div>
+
+        <div class="engagement-grid">
+          <div class="engagement-card reveal">
+            <div class="engagement-step-num">01</div>
+            <h3>Discover</h3>
+            <p>
+              A working session with your L&amp;D and business stakeholders to
+              align on capability gaps and success metrics.
+            </p>
+          </div>
+          <div class="engagement-card reveal" style="--reveal-delay: 80ms">
+            <div class="engagement-step-num">02</div>
+            <h3>Design</h3>
+            <p>
+              Curriculum and case material are adapted to your industry,
+              seniority mix, and existing frameworks.
+            </p>
+          </div>
+          <div class="engagement-card reveal" style="--reveal-delay: 160ms">
+            <div class="engagement-step-num">03</div>
+            <h3>Deliver</h3>
+            <p>
+              Cohorts run on-site, virtually, or blended, led by practitioner
+              faculty with a dedicated program manager.
+            </p>
+          </div>
+          <div class="engagement-card reveal" style="--reveal-delay: 240ms">
+            <div class="engagement-step-num">04</div>
+            <h3>Measure</h3>
+            <p>
+              We report on completion, assessment results, and manager-rated
+              behavior change at 90 days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section-white section-padding" id="team">
+      <div class="wrap">
+        <div class="section-center reveal" style="margin-bottom: 56px">
+          <p class="eyebrow">Leadership</p>
+          <h2
+            class="headline-section"
+            style="font-size: clamp(28px, 3.6vw, 48px)"
+          >
+            The people behind<br />the programs.
+          </h2>
+          <p
+            class="subhead"
+            style="margin-top: 12px; font-size: clamp(17px, 1.6vw, 21px)"
+          >
+            A faculty of practitioners, researchers, and program designers.
+          </p>
+        </div>
+
+        <!-- Leader spotlight -->
+        <div class="team-leader-card reveal">
+          <div class="leader-avatar">AH</div>
+          <div>
+            <span class="leader-badge">Founding Leader</span>
+            <h3 class="leader-name">Dr. Amelia Hartono</h3>
+            <div class="leader-role">Executive Director</div>
+            <p class="leader-bio">
+              Amelia leads B Institute with a focus on practical excellence,
+              future-ready capability, and meaningful transformation for leaders
+              and organizations across sectors.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Strategy</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Executive Education</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continuous team showcase -->
+        <div class="reveal" style="--reveal-delay: 120ms; margin-top: 48px">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 20px;
+            "
+          >
+            <h3
+              style="
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--apple-black);
+              "
+            >
+              Cabinet &amp; team members
+            </h3>
+            <span class="eyebrow" style="margin-bottom: 0; font-size: 10px"
+              >Continuous faculty showcase</span
+            >
+          </div>
+
+          <div
+            id="memberSlider"
+            class="continuous-scroll no-scrollbar"
+            aria-live="polite"
+          >
+            <div class="continuous-scroll-track">
+              <article class="member-card">
+                <div class="member-avatar">RS</div>
+                <h4 class="member-name">Rangga Saputra</h4>
+                <div class="member-role">Director of Programs</div>
+              </article>
+              <article class="member-card">
+                <div class="member-avatar">MT</div>
+                <h4 class="member-name">Dr. Michael Tan</h4>
+                <div class="member-role">Head of Research</div>
+              </article>
+              <article class="member-card">
+                <div class="member-avatar">SW</div>
+                <h4 class="member-name">Sophia Wibowo</h4>
+                <div class="member-role">Head of Partnerships</div>
+              </article>
+              <article class="member-card">
+                <div class="member-avatar">DN</div>
+                <h4 class="member-name">Dewi Nurani</h4>
+                <div class="member-role">Program Director</div>
+              </article>
+              <article class="member-card">
+                <div class="member-avatar">AR</div>
+                <h4 class="member-name">Aditya Rahman</h4>
+                <div class="member-role">Learning Design Lead</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section-dark section-padding" id="testimonials">
+      <div class="wrap">
+        <div class="section-center reveal" style="margin-bottom: 56px">
+          <p class="eyebrow" style="color: rgba(255,255,255,0.4)">
+            Testimonials
+          </p>
+          <h2
+            class="headline-section"
+            style="color: #fff; font-size: clamp(28px, 3.6vw, 48px)"
+          >
+            What alumni and<br />partners say.
+          </h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="testimonial-text">
+              The leadership program gave our managers a shared vocabulary and a
+              shared standard. That alone changed how our teams operate.
+            </p>
+            <div class="testimonial-name">Dian Kusuma</div>
+            <div class="testimonial-role">
+              VP Operations, Nusantara Manufacturing
+            </div>
+          </div>
+          <div class="testimonial-card reveal" style="--reveal-delay: 90ms">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="testimonial-text">
+              I came in skeptical of another analytics course. I left able to
+              actually challenge a dataset in a board meeting.
+            </p>
+            <div class="testimonial-name">Farhan Ridwan</div>
+            <div class="testimonial-role">Finance Director, Meridian Group</div>
+          </div>
+          <div class="testimonial-card reveal" style="--reveal-delay: 180ms">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="testimonial-text">
+              B Institute treats a corporate cohort the way a university treats
+              a graduate seminar. The bar is genuinely high.
+            </p>
+            <div class="testimonial-name">Laras Anggraini</div>
+            <div class="testimonial-role">Head of People, Cakra Retail</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="section-gray section-padding" id="news">
+      <div class="wrap">
+        <div class="section-center reveal" style="margin-bottom: 56px">
+          <p class="eyebrow">News</p>
+          <h2
+            class="headline-section"
+            style="font-size: clamp(28px, 3.6vw, 48px)"
+          >
+            From the Institute.
+          </h2>
+        </div>
+
+        <div class="news-grid">
+          <div class="news-card reveal">
+            <div class="news-date">August 2026</div>
+            <h3>B Institute opens a new Business English track</h3>
+            <p>
+              A new six-week program built with input from regional technology
+              and manufacturing partners.
+            </p>
+            <a href="#" class="link-arrow">Read more</a>
+          </div>
+          <div class="news-card reveal" style="--reveal-delay: 90ms">
+            <div class="news-date">June 2026</div>
+            <h3>
+              Class of 2026 graduates 340 professionals across five programs
+            </h3>
+            <p>
+              This year's cohort represented 58 companies across manufacturing,
+              finance, and retail.
+            </p>
+            <a href="#" class="link-arrow">Read more</a>
+          </div>
+          <div class="news-card reveal" style="--reveal-delay: 180ms">
+            <div class="news-date">March 2026</div>
+            <h3>
+              Partnership announced with a regional manufacturing association
+            </h3>
+            <p>
+              The partnership will fund 40 scholarships for first-time managers
+              over the next two years.
+            </p>
+            <a href="#" class="link-arrow">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section-white section-padding" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h2
+              class="headline-section"
+              style="
+                font-size: clamp(26px, 3vw, 36px);
+                margin-bottom: 8px;
+              "
+            >
+              Partner with B Institute
+            </h2>
+            <p class="body-text" style="margin-bottom: 32px">
+              Request a proposal for a corporate cohort, or reach out about
+              individual enrollment — our team responds within one business day.
+            </p>
+
+            <div class="contact-info-row">
+              <div class="contact-label">Address</div>
+              <div class="contact-value">
+                Jl. Sudirman Kav. 25<br />Jakarta 10220, Indonesia
+              </div>
+            </div>
+            <div class="contact-info-row">
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+62 21 555 0142</div>
+            </div>
+            <div class="contact-info-row">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">info@binstitute.org</div>
+            </div>
+            <div class="contact-info-row">
+              <div class="contact-label">Office Hours</div>
+              <div class="contact-value">
+                Monday – Friday, 08:00 – 17:00
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            style="--reveal-delay: 120ms"
+            onsubmit="return false;"
+          >
+            <div class="form-row">
+              <div>
+                <label for="fname">Full Name</label>
+                <input id="fname" type="text" name="fname" required />
+              </div>
+              <div>
+                <label for="fcompany">Company / Organization</label>
+                <input id="fcompany" type="text" name="fcompany" />
+              </div>
+            </div>
+            <div>
+              <label for="femail">Work Email</label>
+              <input id="femail" type="email" name="femail" required />
+            </div>
+            <div>
+              <label for="fprogram">How can we help</label>
+              <select id="fprogram" name="fprogram">
+                <option>Corporate Training Program</option>
+                <option>Custom Cohort for My Organization</option>
+                <option>Everyday English</option>
+                <option>Business English</option>
+                <option>Speaking Lab</option>
+                <option>Academic English</option>
+                <option>IELTS Preparation</option>
+                <option>Teacher Development</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div>
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="fmessage" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="justify-self: start">
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-text">B INSTITUTE</div>
+            <p class="footer-brand-desc">
+              Professional education for people who make decisions that matter.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>Explore</h5>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#engagement">For Organizations</a>
+            <a href="#team">Team</a>
+            <a href="#news">News</a>
+          </div>
+          <div class="footer-col">
+            <h5>Programs</h5>
+            <a href="#programs">Everyday English</a>
+            <a href="#programs">Business English</a>
+            <a href="#programs">Speaking Lab</a>
+            <a href="#programs">IELTS Preparation</a>
+          </div>
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <a href="#contact">Contact</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 B Institute. All rights reserved.</div>
+          <div class="footer-social">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ CUSTOMER SERVICE WIDGET ============ -->
+    <button
+      id="customerServiceToggle"
+      class="customer-service-toggle"
+      type="button"
+      aria-controls="customerServicePanel"
+      aria-expanded="false"
+    >
+      <span class="customer-service-icon" aria-hidden="true">?</span>
+      <span>Customer Service</span>
+    </button>
+
+    <section
+      id="customerServicePanel"
+      class="customer-service-panel"
+      aria-label="Customer Service chat"
+      aria-hidden="true"
+    >
+      <div class="customer-service-header">
+        <div>
+          <strong>B Institute Support</strong>
+          <span>English learning assistant</span>
+        </div>
+        <button
+          id="customerServiceClose"
+          type="button"
+          aria-label="Close Customer Service"
+        >
+          &times;
+        </button>
+      </div>
+      <div
+        id="customerServiceMessages"
+        class="customer-service-messages"
+        aria-live="polite"
+      >
+        <div class="customer-message customer-message-bot">
+          Hello. How can we help you find the right English program?
+        </div>
+      </div>
+      <div class="customer-service-questions" aria-label="Choose a question">
+        <p>How can we help?</p>
+        <button type="button" class="customer-question" data-topic="business">
+          What is Business English?
+        </button>
+        <button type="button" class="customer-question" data-topic="ielts">
+          How does IELTS preparation work?
+        </button>
+        <button type="button" class="customer-question" data-topic="speaking">
+          Can I improve my speaking?
+        </button>
+        <button type="button" class="customer-question" data-topic="academic">
+          Which program is right for study?
+        </button>
+        <button type="button" class="customer-question" data-topic="schedule">
+          What schedules are available?
+        </button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
